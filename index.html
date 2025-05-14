@@ -44,9 +44,15 @@
     .formulario {
       margin-top: 2rem;
     }
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      height: 700px;
+      margin-top: 2rem;
+    }
     iframe {
       width: 100%;
-      height: 650px;
+      height: 100%;
       border: none;
       border-radius: 8px;
       background-color: #ffffff;
@@ -100,9 +106,11 @@
   <section class="formulario">
     <h2>Cadastre-se para fazer parte</h2>
     <p>Receba nossos conteúdos, acompanhe o lançamento da plataforma e junte-se a quem quer transformar o recrutamento.</p>
-    <!-- Substitua abaixo pela URL real do seu formulário Notion Forms -->
-    <iframe style="border:none;width:100%;" id="contact-us-wvfijb" src="https://noteforms.com/forms/contact-us-wvfijb"></iframe>
-      <script type="text/javascript" onload="initEmbed('contact-us-wvfijb')" src="https://noteforms.com/widgets/iframe.min.js"></script>  
+    <div class="iframe-wrapper">
+      <!-- Formulário Notion Forms incorporado -->
+      <iframe style="border:none;width:100%;" id="contact-us-wvfijb" src="https://noteforms.com/forms/contact-us-wvfijb"></iframe>
+    </div>
+    <script type="text/javascript" onload="initEmbed('contact-us-wvfijb')" src="https://noteforms.com/widgets/iframe.min.js"></script>
   </section>
 
   <footer>
